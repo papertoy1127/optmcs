@@ -10,13 +10,13 @@ repositories {
 
 dependencies {
     compileOnly(kotlin("stdlib")) // Kotlin
-    compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT") // Paper Latest
+    compileOnly("io.papermc.paper:paper-api:1.17-R0.1-SNAPSHOT") // Paper Latest
     implementation("com.github.monun:kommand:1.1.0")
 }
 
 tasks {
     compileKotlin {
-        kotlinOptions.jvmTarget = "8" // 응 8로 내릴거야
+        kotlinOptions.jvmTarget = "16" // 응 8로 내릴거야
     }
     processResources {
         filesMatching("**/*.yml") {
